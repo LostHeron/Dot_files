@@ -49,6 +49,7 @@ vim.keymap.set('v', 'p', '"_dgvP', opts)
 
 -- to switch between tab
 vim.keymap.set('n', '<leader><tab>', '<cmd>bn<CR>', opts)
+vim.keymap.set('n', '<leader><s-tab>', '<cmd>bp<CR>', opts)
 -- test to not be yank
 -- test to not be yank
 
