@@ -101,7 +101,13 @@ return { -- Fuzzy Finder (files, lsp, etc)
         builtin.find_files {
 			find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' },
 		}
-      end, { desc = '[S]earch [/] in Open Files' })
+      end, { desc = '[S]earch [/] in Open Files with hidden' })
+
+	  vim.keymap.set('n', '<leader>sa', function()
+        builtin.find_files {
+			find_command = { 'rg', '--no-ignore', '--files', '--iglob', '!.git', '--hidden' },
+		}
+      end, { desc = '[S]earch [/] in Open Files with hidden' })
 
       -- Shortcut for searching your Neovim configuration files
       vim.keymap.set('n', '<leader>sn', function()

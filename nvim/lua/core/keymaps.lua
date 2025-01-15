@@ -53,3 +53,7 @@ vim.keymap.set('n', '<leader><s-tab>', '<cmd>bp<CR>', opts)
 -- test to not be yank
 -- test to not be yank
 
+-- to allowd 'ctrl + b' and 'ctrl + f' to move backward and forward in cmd mode
+vim.keymap.set('c', '<C-b>', '<Left>', opts)
+vim.keymap.set('c', '<C-f>', '<Right>', opts)
+
