@@ -179,13 +179,22 @@ nnoremap <leader>e <cmd>Lex<CR>
 vnoremap > >gv
 vnoremap < <gv
 
+" allow <C-b> and <C-f> to move back and forth in cmd mode
+cnoremap <C-b> <left>
+cnoremap <C-f> <right>
+
+" test for C-P to behave like UP in cmd mode (same for C-N with down)
+cnoremap <C-p> <up>
+cnoremap <C-n> <down>
+
 " do not copy what was replaced in visual mod :
 " WARNING : behaviour problem when copying until an end of line 
 " add a space at the end of line to counter 
 vnoremap p "_dP
 
 " clear last searched pattern when pressing <Esc> in normal mode 
-nnoremap <Esc> <Esc><cmd>let @/ = ""<CR>
+" but commented cuz not working right
+" nnoremap <Esc> <Esc><cmd>let @/ = ""<CR>
 
 " on va remplacer apres les : :char est tu la ? 
 
