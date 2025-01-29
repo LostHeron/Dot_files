@@ -188,8 +188,8 @@ inoremap <C-f> <right>
 " test for C-P to behave like UP in cmd mode and insert mode (same for C-N with down)
 cnoremap <C-p> <up>
 cnoremap <C-n> <down>
-inoremap <C-p> <up>
-inoremap <C-n> <down>
+" inoremap <C-p> <up>
+" inoremap <C-n> <down>
 
 " do not copy what was replaced in visual mod :
 " WARNING : behaviour problem when copying until an end of line 

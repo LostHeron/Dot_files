@@ -62,6 +62,6 @@ vim.cmd([[
 	cnoremap <C-n> <down>
 	inoremap <C-b> <left>
 	inoremap <C-f> <right>
-	inoremap <C-p> <up>
-	inoremap <C-n> <down>
+	" inoremap <C-p> <up>
+	" inoremap <C-n> <down>
 ]])
