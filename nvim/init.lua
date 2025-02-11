@@ -24,5 +24,5 @@ require('lazy').setup({
 	require 'plugins.lsp',
 	require 'plugins.autocompletion',
 	require 'plugins.header42',
-	--require 'plugins.norminette42'
+	require 'plugins.norminette42'
 })

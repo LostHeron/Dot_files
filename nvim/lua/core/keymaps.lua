@@ -56,12 +56,21 @@ vim.keymap.set('n', '<leader><s-tab>', '<cmd>bp<CR>', opts)
 -- to allowd 'ctrl + b' and 'ctrl + f' to move backward and forward in cmd mode
 -- And to make C-p and C-n behave like Up and Down in cmd mode
 vim.cmd([[
+	" to allow ctrl + b and f to move forward / backward
+	" in visual and command mode
 	cnoremap <C-b> <left>
 	cnoremap <C-f> <right>
-	cnoremap <C-p> <up>
-	cnoremap <C-n> <down>
 	inoremap <C-b> <left>
 	inoremap <C-f> <right>
+	" to allow ctrl + p and n to move through command history
+	cnoremap <C-p> <up>
+	cnoremap <C-n> <down>
 	" inoremap <C-p> <up>
 	" inoremap <C-n> <down>
+	inoremap <C-g> <
+	" inoremap <C-h> > "this one does not work, little annoying ...
+	inoremap <C-j> >
+	" to make ctrl + o centre position
+	nnoremap <C-o> <C-o>zz
+	nnoremap <C-i> <C-i>zz
 ]])
