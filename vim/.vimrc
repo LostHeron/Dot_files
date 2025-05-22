@@ -241,3 +241,5 @@ augroup end
 " burwritepost $MYVIMRC) and autocmd to say do that automatically each time
 " your save $MYVIMRC file !
 " autocmd bufwritepost $MYVIMRC source $MYVIMRC
+inoremap <C-g> <
+inoremap <C-j> >
