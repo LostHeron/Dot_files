@@ -12,6 +12,22 @@ end,
 
 --[[
 return {
+	"hardyrafael17/norminette42.nvim",
+	cmd = { "NorminetteToggle" },
+	keys = { "<F4>" },
+	config = function()
+	local norminette = require("norminette")
+	norminette.setup({
+			runOnSave = true,
+			maxErrorsToShow = 5,
+			active = true,
+	})
+end,
+}
+]]--
+
+--[[
+return {
     "hardyrafael17/norminette42.nvim",
     config = function()
         if not vim.g.norminette42_active then

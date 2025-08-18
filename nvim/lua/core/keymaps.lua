@@ -62,6 +62,10 @@ vim.cmd([[
 	cnoremap <C-f> <right>
 	inoremap <C-b> <left>
 	inoremap <C-f> <right>
+	" to allow ctrl + a and e to move to begin / end  
+	" of line in insert mode 
+	inoremap <C-a> <c-o>0
+	inoremap <C-e> <c-o>$
 	" to allow ctrl + p and n to move through command history
 	cnoremap <C-p> <up>
 	cnoremap <C-n> <down>
@@ -73,4 +77,11 @@ vim.cmd([[
 	" to make ctrl + o centre position
 	nnoremap <C-o> <C-o>zz
 	nnoremap <C-i> <C-i>zz
+	" to make gd center position
+	nnoremap gd gdzz
+	" to make { and } center position
+	nnoremap { {zz
+	nnoremap } }zz
+	nnoremap # #N
+	set scrolloff=5
 ]])
