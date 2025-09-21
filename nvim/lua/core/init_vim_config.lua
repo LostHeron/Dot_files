@@ -23,6 +23,14 @@ vim.o.showtabline = 2 -- always show tabs
 
 vim.o.undofile = true -- Save undo history
 
+
+vim.api.nvim_create_autocmd({'BufWinEnter'}, {
+  --group = 'userconfig',
+  desc = 'return cursor to where it was last time closing the file',
+  pattern = '*',
+  command = 'silent! normal! g`"zv',
+})
+
 -- vim.o.paste = true -- always insert in pasting mode (tho i dont know if really good idea to do so 
 
 --[[
