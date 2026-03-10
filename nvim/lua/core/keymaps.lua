@@ -84,4 +84,5 @@ vim.cmd([[
 	nnoremap } }zz
 	nnoremap # #N
 	set scrolloff=5
+	"set iskeyword-=_ " to allow 'w' to move underscore to underscore !
 ]])
