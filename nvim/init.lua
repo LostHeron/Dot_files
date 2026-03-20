@@ -26,3 +26,7 @@ require('lazy').setup({
 	require 'plugins.header42',
 	require 'plugins.norminette42'
 })
+
+vim.cmd([[
+	NorminetteDisable
+	]])
